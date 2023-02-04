@@ -1,5 +1,5 @@
 ---
 linkTitle: Instagram
-linkIcon: logos:instagram-icon
+linkIcon: simple-icons:instagram
 linkURL: https://www.instagram.com/myprimitivedolls/
 ---
