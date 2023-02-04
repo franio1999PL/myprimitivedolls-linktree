@@ -3,17 +3,16 @@ import MainLayout from "@layouts/MainLayout.astro";
 import Avatar from "@components/Avatar.astro";
 import FeaturedCardsLayout from "@layouts/FeaturedCardsLayout.astro";
 import FeaturedCard from "@components/FeaturedCard.astro";
+const links = await Astro.glob('./links/*.md')
 ---
 <MainLayout title="Links | Myprimitivedolls">
 	<Avatar />
 	<FeaturedCardsLayout>
-		<FeaturedCard featuredCardIcon="simple-icons:etsy" featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
-		<FeaturedCard featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
-		<FeaturedCard featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
-		<FeaturedCard featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
-		<FeaturedCard featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
-		<FeaturedCard featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
-		<FeaturedCard featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
-		<FeaturedCard featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
+		{
+			links.map(link => (
+				<FeaturedCard featuredCardTitle={link.frontmatter.linkTitle} featuredCardIcon={link.frontmatter.linkIcon} featuredCardLink={link.frontmatter.linkURL} />
+			))
+		}
+		<!-- <FeaturedCard featuredCardTitle='test' featuredCardIcon='test' featuredCardLink='test' /> -->
 	</FeaturedCardsLayout>
 </MainLayout>
