@@ -15,9 +15,10 @@ a {
 
 body {
   background-image: url('/background.jpg');
-  background-size: 120% 120%;
+  background-size: 105% 105%;
   background-repeat: no-repeat;
-  animation: gradient 15s ease infinite;
+  object-fit: fill;
+  animation: gradient 25s ease infinite;
   height: 100vh; /* do usunięcia */
 }
 
