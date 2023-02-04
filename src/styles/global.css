@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 a {
   color: inherit;
@@ -15,20 +18,29 @@ a {
 
 body {
   background-image: url('/background.jpg');
-  background-size: 105% 105%;
+  background-size: 120% 120%;
+  background-position: center center;
   background-repeat: no-repeat;
   object-fit: fill;
-  animation: gradient 25s ease infinite;
-  height: 100vh; /* do usunięcia */
+  animation: moving 30s ease infinite;
+  height: 100vh;
 }
 
-@keyframes gradient {
+@media only screen and (max-width: 600px) {
+  body {
+    background-size: 120% 100%;
+  }
+}
+
+@keyframes moving {
   0% {
     background-position: 0% 50%;
   }
+  
   50% {
     background-position: 100% 50%;
   }
+ 
   100% {
     background-position: 0% 50%;
   }
