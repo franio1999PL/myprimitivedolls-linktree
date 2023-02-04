@@ -1,5 +1,5 @@
 ---
 linkTitle: Youtube
-linkIcon: ant-design:youtube-filled
+linkIcon: simple-icons:youtube
 linkURL: https://www.youtube.com/@myprimitivedolls
 ---
