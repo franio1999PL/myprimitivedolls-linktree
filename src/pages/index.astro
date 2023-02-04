@@ -1,0 +1,12 @@
+---
+import MainLayout from "@layouts/MainLayout.astro";
+import Avatar from "@components/Avatar.astro";
+import FeaturedCardsLayout from "@layouts/FeaturedCardsLayout.astro";
+import FeaturedCard from "@components/FeaturedCard.astro";
+---
+<MainLayout title="Links | Myprimitivedolls">
+	<Avatar />
+	<FeaturedCardsLayout>
+		<FeaturedCard featuredCardIcon="simple-icons:etsy" featuredCardTitle="My Etsy Shop" featuredCardLink="https://www.etsy.com/shop/myprimitivedolls" />
+	</FeaturedCardsLayout>
+</MainLayout>
