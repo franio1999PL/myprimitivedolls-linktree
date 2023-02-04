@@ -1,5 +1,5 @@
 ---
 linkTitle: Facebook
-linkIcon: simple-icons:instagram
+linkIcon: simple-icons:facebook
 linkURL: https://www.facebook.com/MyPrimitiveDolls
 ---
