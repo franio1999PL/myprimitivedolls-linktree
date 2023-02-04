@@ -14,8 +14,8 @@ a {
 }
 
 body {
-  background: linear-gradient(-45deg, #eee152, #e73cbc, #237cd5, #23bdd5);
-  background-size: 400% 400%;
+  background-image: url('/background.jpg');
+  background-size: 120% 120%;
   background-repeat: no-repeat;
   animation: gradient 15s ease infinite;
   height: 100vh; /* do usunięcia */
