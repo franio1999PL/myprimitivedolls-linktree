@@ -1,5 +1,5 @@
 ---
-import { GoogleAnalytics } from 'astro-analytics';
+import { GoogleAnalytics, Amplitude } from 'astro-analytics';
 import "@styles/global.css"
 const { title } = Astro.props
 ---
@@ -11,6 +11,7 @@ Contact: contact@blady.dev
 <html lang='en'>
   <head>
     <GoogleAnalytics id="G-5LJV2JH7CM" />
+    <Amplitude apiKey="a092ecf16bdb8e97473d97802e602f38" />
     <meta charset='utf-8' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
