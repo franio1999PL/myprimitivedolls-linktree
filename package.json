@@ -14,8 +14,10 @@
     "@astrojs/netlify": "^2.1.1",
     "@astrojs/tailwind": "^3.0.1",
     "astro": "^2.0.6",
+    "astro-analytics": "^2.6.0",
     "astro-icon": "^0.8.0",
     "astro-netlify-cms": "^0.5.3",
     "tailwindcss": "^3.2.4"
-  }
+  },
+  "devDependencies": {}
 }

@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 import NetlifyCMS from 'astro-netlify-cms'
+// import partytown from '@astrojs/partytown'
 
 // <https://astro.build/config>
 import tailwind from '@astrojs/tailwind'
@@ -10,7 +11,6 @@ import netlify from '@astrojs/netlify/functions'
 // <https://astro.build/config>
 export default defineConfig({
   integrations: [
-    tailwind(),
     NetlifyCMS({
       config: {
         backend: {
@@ -45,7 +45,14 @@ export default defineConfig({
           }
         ]
       }
-    })
+    }),
+    tailwind()
+    // partytown({
+    //   // Adds dataLayer.push as a forwarding-event.
+    //   config: {
+    //     forward: ['dataLayer.push']
+    //   }
+    // })
   ],
   output: 'server',
   adapter: netlify()

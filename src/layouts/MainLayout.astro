@@ -1,14 +1,42 @@
 ---
+import { GoogleAnalytics } from 'astro-analytics';
 import "@styles/global.css"
 const { title } = Astro.props
 ---
-
+<!-- 
+Author: Franciszek Sikora
+Github: https://github.com/franio1999PL
+Contact: contact@blady.dev
+ -->
 <html lang='en'>
   <head>
+    <GoogleAnalytics id="G-5LJV2JH7CM" />
     <meta charset='utf-8' />
     <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
+    <meta name="keywords" content="handmade dolls, doll maker, shops, social media, contact" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="Franciszek Sikora <contact@blady.dev>" />
+
+    <meta name="title" content="Links | Myprimitivedolls">
+    <meta name="description" content="myprimitivedolls.com, the website of a renowned doll maker, offers links to shops, social media, and contact information. Find your perfect handmade doll here.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://myprimitivedolls.com/">
+    <meta property="og:title" content="Links | Myprimitivedolls">
+    <meta property="og:description" content="myprimitivedolls.com, the website of a renowned doll maker, offers links to shops, social media, and contact information. Find your perfect handmade doll here.">
+    <meta property="og:image" content="https://myprimitivedolls.com/favicon.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://myprimitivedolls.com/">
+    <meta property="twitter:title" content="Links | Myprimitivedolls">
+    <meta property="twitter:description" content="myprimitivedolls.com, the website of a renowned doll maker, offers links to shops, social media, and contact information. Find your perfect handmade doll here.">
+    <meta property="twitter:image" content="https://myprimitivedolls.com/favicon.svg">
+
     <title>{title}</title>
   </head>
   <body class="font-aboreto">
