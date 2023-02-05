@@ -28,7 +28,9 @@ body {
 
 @media only screen and (max-width: 600px) {
   body {
-    background-size: 120% 100%;
+    background: linear-gradient(-45deg, #FFDFD3, #FEC8D8, #D291BC, #957DAD, #E0BBE4);
+    background-size: 400% 400%;
+    animation: moving 30s ease infinite;
     height: 100%;
   }
 }
@@ -37,11 +39,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
-  
+
   50% {
     background-position: 100% 50%;
   }
- 
+
   100% {
     background-position: 0% 50%;
   }
