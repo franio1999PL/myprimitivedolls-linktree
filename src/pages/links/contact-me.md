@@ -1,5 +1,5 @@
 ---
 linkTitle: Contact Me
-linkIcon: material-symbols:mail-outline
+linkIcon: ion:mail-open-outline
 linkURL: mailto:contact@myprimitivedolls.com
 ---
